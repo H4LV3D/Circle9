@@ -581,21 +581,6 @@ fetch("https://reqres.in/api/users/2", {
 - Modules help organize code into separate files
 - ES Modules (ESM) is the official standard format (since ES2015)
 - Files with import/export statements are treated as modules
-- Modules have their own scope (not global)
-- Modules are executed only once, even when imported multiple times
-
-</v-clicks>
-
----
-
-Additional notes:
-
-<v-clicks>
-
-- Before modules, developers used patterns like IIFEs and the revealing module pattern
-- CommonJS is another module format used primarily in Node.js
-- ES Modules work in both browsers and Node.js
-- Modules help prevent naming conflicts and global scope pollution
 
 </v-clicks>
 
@@ -853,7 +838,7 @@ async function loadMathModule() {
 
 - Code splitting - reduce initial load time
 - Conditional loading - load modules only when needed
-- Works in browsers and Node.js
+<!-- - Works in browsers and Node.js -->
 
 </v-clicks>
 
@@ -864,7 +849,7 @@ This is especially important for web applications where load time affects user e
 Dynamic imports return a Promise, so they work well with async/await syntax.
 -->
 
----
+<!-- ---
 
 ## Best Practices
 
@@ -883,7 +868,7 @@ Dynamic imports return a Promise, so they work well with async/await syntax.
 
 </v-clicks>
 
----
+
 
 ## Don'ts ✗
 
@@ -898,30 +883,9 @@ Dynamic imports return a Promise, so they work well with async/await syntax.
 - Use default exports for everything
 - Rely on file extensions in import paths
 
-</v-clicks>
+</v-clicks> -->
 
----
-
-# Module Resolution
-
-## Node.js Resolution
-
-```js {monaco-run}
-import { foo } from "module-name";
-```
-
-<v-clicks>
-
-- Look in `node_modules/module-name`
-- Check package.json's `main` field
-- Look for index.js if no main
-- Check parent directories
-
-</v-clicks>
-
----
-
-# Summary
+<!-- # Summary
 
 This section covered the fundamentals of JavaScript modules, from basic syntax to advanced patterns.
 Understanding modules is essential for writing maintainable JavaScript applications.
@@ -936,13 +900,7 @@ The module system continues to evolve, with new features being added to the lang
 - TypeScript extends module syntax with type-specific features
 - Following best practices leads to maintainable, efficient code
 
-</v-clicks>
-
----
-
-# Learn More
-
-[Documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules) · [GitHub](https://github.com/tc39/proposal-modules) · [Examples](https://github.com/mdn/js-examples/tree/master/modules)
+</v-clicks> -->
 
 ---
 
